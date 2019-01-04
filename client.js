@@ -1,5 +1,7 @@
 var mqtt = require('mqtt')
 var client  = mqtt.connect('mqtt://DESKTOP-BMPPPBP:1883')
+
+console.log("deine");
  
 client.on('connect', function () {
   client.subscribe('deine/mutter', function (err) {
